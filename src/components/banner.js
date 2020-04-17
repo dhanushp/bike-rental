@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as Duke } from "../assets/duke.svg";
 
 const Banner = () => {
   return (
@@ -8,7 +7,7 @@ const Banner = () => {
             <div className='bike-container'>
                 <div className='bg-color'>
                     <div className='bike'>
-                        <Duke />
+                        <img src={require(`../assets/duke.png`)} alt='' />
                     </div>
                 </div>
             </div>
