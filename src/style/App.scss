@@ -5,7 +5,8 @@
 @import "./components/banner.scss";
 @import "./components/about.scss";
 @import "./components/choose.scss";
-
+@import "./components/software.scss";
+@import "./components/work.scss";
 body,
 html {
   user-select: none;
@@ -58,3 +59,22 @@ html {
     height: 100%;
   }
 }
+
+button {
+        padding: 10px 25px;
+        margin: 0 45px;
+        border-radius: 5px;
+        font-family: 'Varela Round', sans-serif;
+        color: $black;
+        cursor: pointer;
+      }
+      .sign-in {
+        background: none;
+        border: solid $yellow 2px;
+      }
+      .sign-up {
+        background: $yellow;
+        border: none;
+        margin-right: 0;
+        box-shadow: 0px 8px 15px rgba(250, 228, 93, 1);
+      }

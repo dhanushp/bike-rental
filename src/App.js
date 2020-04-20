@@ -4,6 +4,8 @@ import Header from './components/header';
 import Banner from './components/banner';
 import About from './components/about';
 import Choose from './components/choose';
+import Software from './components/software';
+import Works from './components/works';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
      <Banner />
      <About />
      <Choose />
+     <Software />
+     <Works />
     </div>
   );
 }

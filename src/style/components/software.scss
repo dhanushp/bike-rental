@@ -1,0 +1,39 @@
+.software-container {
+    width: 100%;
+    background: $accent;
+    padding: 5em 0;
+    .container {
+        display: flex;
+        flex-direction: row;
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .software-header {
+                h1 {
+                    //font-family: "Baloo Paaji 2", cursive;
+                    font-size: 2em;
+                    font-weight: 400;
+                    color: $black;
+                    color: $black;
+                    margin: 0;
+                }
+                span {
+                    background: $yellow;
+                }
+            }
+            .software-bio {
+                font-size: 1.6em;
+                line-height: 1.6em;
+            }
+            .app-store {
+                img {
+                    margin-right: 3em;
+                }
+            }
+        }
+        .right-container {
+            margin-top: -15%;
+        }
+    }   
+}
