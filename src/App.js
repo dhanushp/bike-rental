@@ -7,6 +7,7 @@ import Choose from './components/choose';
 import Software from './components/software';
 import Works from './components/works';
 import Fleet from './components/fleet';
+import Featured from './components/featured';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
      <Software />
      <Works />
      <Fleet />
+     <Featured/>
     </div>
   );
 }

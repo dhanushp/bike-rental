@@ -80,7 +80,7 @@ class Fleet extends Component {
       super(props);
   
       this.state = {
-        paymentSelection: 'paypal',
+        fleetSelection: 'scooter',
         active: false
       }
   
@@ -90,14 +90,14 @@ class Fleet extends Component {
       const currentState = this.state.active;
       event.preventDefault();
       this.setState({
-        paymentSelection: event.target.value,
+        fleetSelection: event.target.value,
         active: !currentState
       })
     }
   
     switchContent = (value) => {
       switch (value) {
-        case 'credit':
+        case 'below250':
           return <div className='card-container'>
             { bikes.map( bike => (
                 <div className='card-box' id={bike.id} >
@@ -111,7 +111,7 @@ class Fleet extends Component {
             </div>
             ))}
           </div>;
-        case 'paypal':
+        case 'scooter':
           return <div className='card-container'>
             { scooters.map( scooter => (
                     <div className='card-box' id={scooter.id} >
@@ -125,7 +125,7 @@ class Fleet extends Component {
             </div>
             ))}
           </div>;
-        case 'amazon':
+        case 'above250':
             return <div className='card-container'>
             { bikes250.map( bike250 => (
                 <div className='card-box' id={bike250.id} >
@@ -145,7 +145,7 @@ class Fleet extends Component {
     }
   
     render() {
-      const { paymentSelection } = this.state;
+      const { fleetSelection } = this.state;
       // eslint-disable-next-line
       const { active } = this.state;
   
@@ -157,12 +157,12 @@ class Fleet extends Component {
                 </div>
                 <div className='list-container'>
                     <div className='bttn-container'>
-                        <button outline className={paymentSelection ==='credit' ? 'active' : null} color="secondary" value="credit" onClick={this.toggleContent} >Bikes > 250cc</button>
-                        <button outline className={paymentSelection ==='paypal' ? 'active' : null} color="secondary" value="paypal" onClick={this.toggleContent} >Scooters</button>
-                        <button outline className={paymentSelection ==='amazon' ? 'active' : null} color="secondary" value="amazon" onClick={this.toggleContent} >Bikes > 250cc</button>
+                        <button outline className={fleetSelection ==='below250' ? 'active' : null} color="secondary" value="below250" onClick={this.toggleContent} >Bikes > 250cc</button>
+                        <button outline className={fleetSelection ==='scooter' ? 'active' : null} color="secondary" value="scooter" onClick={this.toggleContent} >Scooters</button>
+                        <button outline className={fleetSelection ==='above250' ? 'active' : null} color="secondary" value="above250" onClick={this.toggleContent} >Bikes > 250cc</button>
                     </div>
                 </div>
-                {this.switchContent(paymentSelection)}
+                {this.switchContent(fleetSelection)}
                 <div className='bottom-bttn'>
                      <button>View All Fleet</button>
                 </div>
