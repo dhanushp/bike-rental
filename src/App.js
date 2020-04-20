@@ -6,6 +6,7 @@ import About from './components/about';
 import Choose from './components/choose';
 import Software from './components/software';
 import Works from './components/works';
+import Fleet from './components/fleet';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <Choose />
      <Software />
      <Works />
+     <Fleet />
     </div>
   );
 }
