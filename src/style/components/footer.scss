@@ -4,8 +4,7 @@
     .footer-span {
         display: flex;
         justify-content: space-between;
-        .wheelstreet {
-            
+        .wheelstreet {    
             .wheelstreet-header {
                 font-family: "Baloo Paaji 2", cursive;
             }
@@ -15,7 +14,6 @@
                     align-items: center;
                     font-size: 1.3em;
                     margin-bottom: 1em;
-                    
                     img {
                         width: 30px;
                         padding-right: 1em;
@@ -27,15 +25,13 @@
             }
         }
         .company {
-            
             .company-header {
                 font-family: "Baloo Paaji 2", cursive;
             }
             .company-detail {
                 p {
                     font-size: 1.3em;
-                }
-                
+                }    
             }
         }
         .policies {
