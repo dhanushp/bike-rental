@@ -28,7 +28,7 @@ const Featured = () => {
                 <div className='image-container'>
                 { featuredPapers.map( featuredPaper => (
                         <div className='image' id={featuredPaper.id}>
-                            <img src={ require(`../assets/papers/${featuredPaper.img}.png`)} alt='featured-image' />
+                            <img src={ require(`../assets/papers/${featuredPaper.img}.png`)} alt='featured-img' />
                         </div>
                     ))}
                 </div>

@@ -8,6 +8,7 @@ import Software from './components/software';
 import Works from './components/works';
 import Fleet from './components/fleet';
 import Featured from './components/featured';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
      <Software />
      <Works />
      <Fleet />
-     <Featured/>
+     <Featured />
+     <Footer />
     </div>
   );
 }

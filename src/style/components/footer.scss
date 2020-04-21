@@ -1,0 +1,86 @@
+.footer-container {
+    background: $yellow;
+    padding: 3em 0;
+    .footer-span {
+        display: flex;
+        justify-content: space-between;
+        .wheelstreet {
+            
+            .wheelstreet-header {
+                font-family: "Baloo Paaji 2", cursive;
+            }
+            .wheelstreet-span {
+                .line {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.3em;
+                    margin-bottom: 1em;
+                    
+                    img {
+                        width: 30px;
+                        padding-right: 1em;
+                    }
+                    P {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .company {
+            
+            .company-header {
+                font-family: "Baloo Paaji 2", cursive;
+            }
+            .company-detail {
+                p {
+                    font-size: 1.3em;
+                }
+                
+            }
+        }
+        .policies {
+            .policies-header {
+                font-family: "Baloo Paaji 2", cursive;
+            }
+            .policies-detail {
+                font-size: 1.3em;
+            }
+        }
+        .quicklinks {
+            .quicklinks-header{
+                font-family: "Baloo Paaji 2", cursive;
+            }
+            .quicklinks-detail {
+                font-size: 1.3em;
+            }
+        }
+        .download {
+            .download-header {
+                font-family: "Baloo Paaji 2", cursive;
+            }
+            .download-detail{
+                display: flex;
+                flex-direction: column;
+                img {
+                    margin-bottom: 1em;
+                    width: 75%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.footer-child {
+    background: $black;
+    margin: 0;
+    padding: 1.4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 1.5em;
+        color: white;
+        margin: 0;
+        letter-spacing: 0.2em;
+    }
+}
